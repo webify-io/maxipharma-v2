@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 :root {
 	--button-hover-blue: #007bff;
 
@@ -72,12 +74,12 @@ html {
 }
 
 .nav .logo .logoName {
-	color: #212121;
+	color: hsl(240, 2%, 20%);
 	font-size: 1.5rem;
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: 'Fredoka', sans-serif;
 }
 sup {
-	font-size: 60%;
+	font-size: 50%;
 	vertical-align: top;
 }
 /* Logo CSS end */
