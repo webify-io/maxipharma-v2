@@ -464,9 +464,9 @@ form textarea {
 	display: inline-block;
 	/* width: 87%; */
 	padding: 1.125rem;
-	border-radius: 5px;
+	border-radius: 45px;
 	font-size: var(--fs-body);
-	color: var(--fc-text-dark);
+	color: #fff;
 	background-color: var(--button-hover-blue);
 	transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
