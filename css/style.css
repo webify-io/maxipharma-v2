@@ -13,6 +13,7 @@
 	--fs-300: 0.925rem;
 	--fs-500: 1.8rem;
 	--fs-600: 1rem;
+	--fs-650: 1.2rem;
 	--fs-700: 1.8rem;
 	--fs-750: 1.4rem;
 	--fs-800: 2.8rem;
@@ -20,6 +21,7 @@
 
 	--fs-body: var(--fs-600);
 	--fs-body-small: var(--fs-300);
+	--fs-body-nav: var(--fs-650);
 	--fs-primary-heading: var(--fs-900);
 	--fs-primary-heading-alt: var(--fs-800);
 	--fs-secondary-heading: var(--fs-700);
@@ -57,10 +59,10 @@ html {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2rem 0 4rem;
-	background-color: #fff;
+	background-color: #ffa07a;
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1);
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	/* border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px; */
 }
 
 /* Logo CSS Start */
@@ -70,13 +72,14 @@ html {
 }
 
 .nav .logo .logoName {
+	font-size: 1.2rem;
 	font-weight: var(--fw-bold);
 }
 /* Logo CSS end */
 
 .nav .navbar a {
 	margin-right: 1.65rem;
-	font-size: var(--fs-body);
+	font-size: var(--fs-body-nav);
 	font-weight: var(--fw-bold);
 	color: var(--fc-text-dark);
 }
@@ -93,8 +96,9 @@ html {
 	margin-left: 4rem;
 	display: inline-block;
 	padding: 0.635rem 1.2rem;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	color: var(--fc-text-dark);
+	background: #fff;
 	transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
@@ -342,7 +346,8 @@ li span {
 .banner {
 	height: auto;
 	/* height: 38rem; */
-	background-color: var(--fc-text-blue);
+	background-color: #f3f3f3;
+	/* background-color: var(--fc-text-blue); */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -407,7 +412,7 @@ li span {
 }
 
 .bannerInnerTextContact a:hover {
-	color: #fff;
+	color: var(--button-hover-blue);
 }
 
 .bannerInnerTextContact i {
@@ -418,7 +423,7 @@ li span {
 
 .bannerInnerTextContact a:hover i {
 	padding-right: 1.8rem;
-	color: var(--fc-text-orange);
+	color: var(--button-hover-blue);
 	transform: scale(1.01) translateX(5px);
 	/* transition: all 0.3s ease-out; */
 }
@@ -462,6 +467,7 @@ form textarea {
 	border-radius: 5px;
 	font-size: var(--fs-body);
 	color: var(--fc-text-dark);
+	background-color: var(--button-hover-blue);
 	transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -514,7 +520,7 @@ form textarea {
 }
 
 .footer a:hover {
-	color: #007bff;
+	color: var(--fc-text-orange);
 	opacity: 1;
 }
 
