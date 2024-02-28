@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rubik+Glitch+Pop&display=swap');
 
 :root {
 	--button-hover-blue: #007bff;
@@ -23,7 +24,7 @@
 
 	--fs-body: var(--fs-600);
 	--fs-body-small: var(--fs-300);
-	--fs-body-nav: var(--fs-650);
+	--fs-body-nav: var(--fs-600);
 	--fs-primary-heading: var(--fs-900);
 	--fs-primary-heading-alt: var(--fs-800);
 	--fs-secondary-heading: var(--fs-700);
@@ -68,20 +69,28 @@ html {
 }
 
 /* Logo CSS Start */
+.nav .logo {
+	display: flex;
+}
 .nav .logo img {
 	width: 50px;
 	height: 50px;
 }
 
 .nav .logo .logoName {
-	color: hsl(240, 2%, 20%);
-	font-size: 1.5rem;
-	font-family: 'Fredoka', sans-serif;
+	/* color: #000; */
+	color: hsl(0, 0%, 100%);
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: 'Rubik Glitch Pop', 'Protest Revolution', 'Fredoka', sans-serif;
+	position: absolute;
+	top: 1rem;
+	left: 8.2rem;
 }
-sup {
+/* sup {
 	font-size: 50%;
 	vertical-align: top;
-}
+} */
 /* Logo CSS end */
 
 .nav .navbar a {
@@ -96,7 +105,7 @@ sup {
 }
 
 .nav .navbar a.active {
-	color: var(--fc-text-orange);
+	color: hsl(0, 0%, 100%);
 }
 
 .nav .button {
@@ -141,7 +150,7 @@ sup {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 7rem 4rem 2rem;
+	padding: 5rem 4rem 2rem;
 	height: 100vh;
 }
 
@@ -549,6 +558,9 @@ form textarea {
 /*  ********************* Media Queries ********************* */
 /*  ********************************************************* */
 @media only screen and (max-width: 1180px) {
+	#navbar-btn {
+		display: none;
+	}
 	.landing {
 		padding-top: 6rem;
 		padding-bottom: 2rem;
@@ -586,6 +598,9 @@ form textarea {
 		/* transform-origin: top right; */
 		transition: 0.3s ease-out;
 	}
+	.nav .navbar a.active {
+		color: var(--button-hover-blue);
+	}
 	.nav .navbar.active {
 		left: 0;
 		/* transform: scale(1); */
@@ -603,14 +618,17 @@ form textarea {
 		width: 55%;
 		text-align: center;
 	}
-	#navbar-btn {
-		display: none;
-	}
 	/* nav CSS Start */
 	.nav {
 		padding-left: 2rem;
 	}
-	.nav .logo {
+	.logoName_extend {
+		display: none;
+	}
+	.nav .logo .logoName {
+		left: 6.1rem;
+	}
+	/* 	.nav .logo {
 		display: flex;
 	}
 	.nav .logo img {
@@ -624,13 +642,13 @@ form textarea {
 		left: 5.5rem;
 		font-size: 1.6rem;
 		font-weight: var(--fw-bold);
-	}
+	} */
 	/* nav CSS end */
 
 	/* Landing Responsive CSS */
 	.landing {
 		flex-direction: column-reverse;
-		padding: 7rem 2rem 2rem;
+		padding: 6rem 2rem 2rem;
 	}
 
 	/* Services Responsive CSS */
@@ -692,9 +710,6 @@ form textarea {
 	}
 }
 @media (max-width: 525px) {
-	.logoName_extend {
-		display: none;
-	}
 	.nav {
 		padding: 1rem 1rem;
 	}
@@ -703,7 +718,7 @@ form textarea {
 	}
 
 	.landing {
-		padding: 7rem 1rem 2rem;
+		padding: 6rem 1rem 2rem;
 	}
 	.about {
 		padding: 1rem 1rem;
@@ -755,7 +770,7 @@ form textarea {
 
 @media (max-width: 450px) {
 	.infoSection {
-		padding: 0;
+		padding: 1rem 0;
 	}
 
 	.footer .footerLinks a {
