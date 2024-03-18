@@ -540,18 +540,21 @@ form textarea {
 	opacity: 1;
 }
 
-/* Footer Copyright */
-.copyrightFooter {
+/* Footer credit */
+.credit {
 	margin-top: 2rem;
 	border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-	padding: 1rem 1rem 0;
-}
-#copyright {
+	padding: 1rem 1rem;
 	text-align: center;
 	color: var(--fc-text-light);
 	/* color: #212121; */
 	font-size: 0.8rem;
 	opacity: 0.86;
+}
+
+.credit a {
+	color: var(--fc-text-blue);
+	font-weight: 600;
 }
 
 /*  ********************************************************* */
@@ -779,7 +782,7 @@ form textarea {
 	.footer .footerLinks a {
 		margin: 0.8em;
 	}
-	#copyright {
+	.credit {
 		font-size: 0.7rem;
 		opacity: 0.8;
 	}
