@@ -2,7 +2,7 @@
 
 
 <a href="https://maxipharmav2.netlify.app/" target="_blank">
-  <img src="/images/thumbnail.png"lt="Thumbnail"/>
+  <img src="/assets/thumbnail.png" lt="Thumbnail"/>
 </a>
 
 
